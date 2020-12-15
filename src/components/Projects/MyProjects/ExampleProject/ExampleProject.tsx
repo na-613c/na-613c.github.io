@@ -17,10 +17,14 @@ const ExampleProject: FC<Props> = ({example, id}) => {
                 <Paragraph ellipsis={{rows: 2, expandable: true, symbol: 'more'}}>{example.description}</Paragraph>
                 {!!example?.link &&
                 <p>Рабочий проект:<br/>
-                    <Link href={example.link} target="_blank"><LinkOutlined/> {example.link}</Link>
+                    <Link href={example.link} target="_blank">
+                        <LinkOutlined/> {example.link.replace('https://', '')}
+                    </Link>
                 </p>}
                 <p>Код:<br/>
-                    <Link href={example.code} target="_blank"><LinkOutlined/> {example.code}</Link>
+                    <Link href={example.code} target="_blank">
+                        <LinkOutlined/> {example.code.replace('https://', '')}
+                    </Link>
                 </p>
             </Panel>
         </Collapse>

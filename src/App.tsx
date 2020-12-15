@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useRef, useState} from 'react';
+import React, {FC, useState} from 'react';
 import './App.css';
 import MyHeader from "./components/MyHeader/Header";
 import MyFooter from "./components/MyFooter/MyFooter";
@@ -9,6 +9,7 @@ import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import {BackTop} from "antd";
+import Contacts from "./components/Contacts/Contacts";
 
 
 const App: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsData}) => {
@@ -27,10 +28,11 @@ const App: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsData}) => {
     };
 
     return (
-        <div className="App" style={{backgroundColor: state.theme.background, color:state.theme.foreground}}>
+        <div className="App" style={{backgroundColor: state.theme.background, color: state.theme.foreground}}>
             {/*<ThemeContext.Provider value={state.theme}>*/}
             <MyHeader themes={state.theme} toggleTheme={toggleTheme}/>
             <About/>
+            <Contacts/>
             <Skills/>
             <Projects MyProjectsData={MyProjectsData}/>
             <Education/>

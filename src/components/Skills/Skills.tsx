@@ -1,16 +1,16 @@
 import React from 'react';
 import {Tag} from "antd";
 import Icon from '@ant-design/icons';
-import jsIcon from '../../icons/jsIcon';
-import cssIcon from '../../icons/cssIcon';
-import scssIcon from '../../icons/scssIcon';
-import htmlIcon from "../../icons/htmlIcon";
-import gitIcon from "../../icons/gitIcon";
-import tsIcon from "../../icons/tsIcon";
-import reactIcon from "../../icons/reactIcon";
-import reduxIcon from "../../icons/reduxIcon";
-import mobxIcon from '../../icons/mobxIcon';
-import ajaxIcon from "../../icons/ajaxIcon";
+import jsIcon from '../../icons/technologies/jsIcon';
+import cssIcon from '../../icons/technologies/cssIcon';
+import scssIcon from '../../icons/technologies/scssIcon';
+import htmlIcon from "../../icons/technologies/htmlIcon";
+import gitIcon from "../../icons/technologies/gitIcon";
+import tsIcon from "../../icons/technologies/tsIcon";
+import reactIcon from "../../icons/technologies/reactIcon";
+import reduxIcon from "../../icons/technologies/reduxIcon";
+import mobxIcon from '../../icons/technologies/mobxIcon';
+import ajaxIcon from "../../icons/technologies/ajaxIcon";
 
 
 const Skills = () => {
