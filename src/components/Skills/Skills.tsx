@@ -1,49 +1,53 @@
 import React from 'react';
 import {Tag} from "antd";
 import Icon from '@ant-design/icons';
-import jsIcon from '../../icons/technologies/jsIcon';
-import cssIcon from '../../icons/technologies/cssIcon';
-import scssIcon from '../../icons/technologies/scssIcon';
-import htmlIcon from "../../icons/technologies/htmlIcon";
-import gitIcon from "../../icons/technologies/gitIcon";
-import tsIcon from "../../icons/technologies/tsIcon";
-import reactIcon from "../../icons/technologies/reactIcon";
-import reduxIcon from "../../icons/technologies/reduxIcon";
-import mobxIcon from '../../icons/technologies/mobxIcon';
-import ajaxIcon from "../../icons/technologies/ajaxIcon";
+import jsSvg from '../../icons/technologies/jsSvg';
+import cssSvg from '../../icons/technologies/cssSvg';
+import scssSvg from '../../icons/technologies/scssSvg';
+import htmlSvg from "../../icons/technologies/htmlSvg";
+import gitSvg from "../../icons/technologies/gitSvg";
+import tsSvg from "../../icons/technologies/tsSvg";
+import reactSvg from "../../icons/technologies/reactSvg";
+import reduxSvg from "../../icons/technologies/reduxSvg";
+import mobxSvg from '../../icons/technologies/mobxSvg';
+import ajaxSvg from "../../icons/technologies/ajaxSvg";
 
+const style = {
+    color: '#000',
+    borderColor: '#000',
+};
 
 const Skills = () => {
     return (
-        <div style={{paddingBottom:50}}>
-            <Tag icon={<Icon component={htmlIcon} />} color="gold">
+        <div style={{paddingBottom: 50}}>
+            <Tag icon={<Icon component={htmlSvg}/>} color="gold">
                 HTML
             </Tag>
-            <Tag icon={<Icon component={cssIcon} />} color="blue">
+            <Tag icon={<Icon component={cssSvg}/>} color="blue">
                 CSS
             </Tag>
-            <Tag icon={<Icon component={scssIcon} />} color="magenta">
+            <Tag icon={<Icon component={scssSvg}/>} color="magenta">
                 SCSS | SASS
             </Tag>
-            <Tag icon={<Icon component={jsIcon} />} color="yellow">
+            <Tag style={style} icon={<Icon component={jsSvg}/>} color="yellow">
                 JavaScript
             </Tag>
-            <Tag icon={<Icon component={tsIcon} />} color="geekblue">
+            <Tag icon={<Icon component={tsSvg}/>} color="geekblue">
                 TypeScript
             </Tag>
-            <Tag icon={<Icon component={ajaxIcon} />} color="geekblue">
+            <Tag icon={<Icon component={ajaxSvg}/>} color="geekblue">
                 Ajax | Axios
             </Tag>
-            <Tag icon={<Icon component={reactIcon} />} color="blue">
-                React | React-redux
+            <Tag icon={<Icon component={reactSvg}/>} color="blue">
+                React
             </Tag>
-            <Tag icon={<Icon component={reduxIcon} />} color="purple">
+            <Tag icon={<Icon component={reduxSvg}/>} color="purple">
                 Redux | Redux-thunk
             </Tag>
-            <Tag icon={<Icon component={mobxIcon} />} color="orange">
+            <Tag icon={<Icon component={mobxSvg}/>} color="orange">
                 MobX
             </Tag>
-            <Tag icon={<Icon component={gitIcon} />} color="volcano">
+            <Tag icon={<Icon component={gitSvg}/>} color="volcano">
                 Git
             </Tag>
         </div>

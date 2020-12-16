@@ -1,14 +1,20 @@
 import React from 'react';
-import {Avatar, Card, Col, Row, Space, Typography,Image} from 'antd';
+import {Avatar, Card, Col, Image, Row, Space, Typography} from 'antd';
 import {CalendarOutlined} from '@ant-design/icons';
 import education from '../../images/education.png';
 
-const {Text, Link} = Typography;
+const {Text, Link, Title} = Typography;
 const bsuirImg = 'https://iis.bsuir.by/assets/bsuir_logo2.png';
+
+
+const style = {
+    width: '100%',
+};
 
 const Education = () => {
     return (
         <div>
+            <Title level={2}> Оброзование </Title>
             <Row justify="end" style={{marginBottom: 15, padding: '14px 20px'}}>
                 <Col span={6} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}}>
                     <Image
@@ -16,9 +22,9 @@ const Education = () => {
                         src={education}
                     />
                 </Col>
-                <Col span={6} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}}>
-                    <Card title='Оброзование' bordered={false} hoverable={true} style={{textAlign: 'left'}}>
-                        <Space align="start" style={{marginBottom: 15}}>
+                <Col span={10} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}}>
+                    <Card style={style} bordered={false} hoverable={true}>
+                        <Space align="start" style={{marginBottom: 15, textAlign: 'left'}}>
                             <Avatar shape="square" style={{backgroundColor: '#3A547F'}} src={bsuirImg}/>
                             <Text strong>
                                 <Link href="https://www.bsuir.by/" target="_blank">

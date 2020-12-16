@@ -1,5 +1,10 @@
 import {Header} from 'antd/lib/layout/layout';
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
+import {Space, Switch} from "antd";
+import Icon from '@ant-design/icons';
+import darkSvg from "../../icons/dark-light/darkSvg";
+import lightSvg from "../../icons/dark-light/lightSvg";
+
 
 const Style = {
     background: 'rgba(239, 219, 255,0.2)',
@@ -9,20 +14,27 @@ const Style = {
 
 const MyHeader: FC<any> = ({themes, toggleTheme}) => {
 
-    useEffect(() => {
-        console.log('useEffect')
-    }, [themes]);
+    function onChange(checked: boolean) {
+        console.log(checked ? 'rus' : 'eng')
+
+    }
 
     return (
-
         <Header style={{...Style}}>
-            HEADER
-            <button style={{width: 100, height: 20}}
-                    onClick={toggleTheme}
-            />
+            <Space>
+                <span> Шавловский Иван </span>
+                <Switch checkedChildren={<Icon component={lightSvg}/>}
+                        unCheckedChildren={<Icon component={darkSvg}/>}
+                        defaultChecked
+                        onChange={toggleTheme}
+                />
+                <Switch checkedChildren='РУС'
+                        unCheckedChildren='ENG'
+                        defaultChecked
+                        onChange={onChange}
+                />
+            </Space>
         </Header>
-
-
     );
 };
 

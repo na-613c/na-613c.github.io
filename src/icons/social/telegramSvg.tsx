@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 const telegramSvg = () => {
@@ -9,6 +8,4 @@ const telegramSvg = () => {
     </svg>
 };
 
-const telegramIcon = (props: any) => <Icon component={telegramSvg} {...props} />;
-
-export default telegramIcon;
+export default telegramSvg;

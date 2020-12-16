@@ -17,14 +17,12 @@ const App: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsData}) => {
         theme: themes.light,
     });
 
-    const toggleTheme = () => {
-        console.log(state.theme);
-        setState(state => ({
-            theme:
-                state.theme === themes.dark
-                    ? themes.light
-                    : themes.dark,
-        }));
+    const toggleTheme = (isLight: boolean) => {
+        isLight ? setState({theme: themes.light}) : setState({theme: themes.dark})
+    };
+
+    const toggleLang = (isLight: boolean) => {
+        isLight ? setState({theme: themes.light}) : setState({theme: themes.dark})
     };
 
     return (

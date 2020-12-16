@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 const ajaxSvg = () => {
@@ -13,6 +12,4 @@ const ajaxSvg = () => {
     </svg>
 };
 
-const ajaxIcon = (props: any) => <Icon component={ajaxSvg} {...props} />;
-
-export default ajaxIcon;
+export default ajaxSvg;

@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 const vkSvg = () => {
@@ -10,6 +9,4 @@ const vkSvg = () => {
     </svg>
 };
 
-const vkIcon = (props: any) => <Icon component={vkSvg} {...props} />;
-
-export default vkIcon;
+export default vkSvg;

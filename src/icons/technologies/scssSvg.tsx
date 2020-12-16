@@ -10,6 +10,4 @@ const scssSvg = () => {
     </svg>
 };
 
-const scssIcon = (props: any) => <Icon component={scssSvg} {...props} />;
-
-export default scssIcon;
+export default scssSvg;

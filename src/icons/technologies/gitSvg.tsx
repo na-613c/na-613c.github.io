@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 const gitSvg = () => {
@@ -10,6 +9,4 @@ const gitSvg = () => {
     </svg>
 };
 
-const gitIcon = (props: any) => <Icon component={gitSvg} {...props} />;
-
-export default gitIcon;
+export default gitSvg;

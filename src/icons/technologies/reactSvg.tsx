@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 const reactSvg = () => {
@@ -12,7 +11,4 @@ const reactSvg = () => {
             fill="#00BDFF"/>
     </svg>
 };
-
-const reactIcon = (props: any) => <Icon component={reactSvg} {...props} />;
-
-export default reactIcon;
+export default reactSvg;

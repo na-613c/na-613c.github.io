@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 
@@ -22,7 +21,4 @@ const mobxSvg = () => {
             fill="#ffffff"/>
     </svg>
 };
-
-const mobxIcon = (props: any) => <Icon component={mobxSvg} {...props} />;
-
-export default mobxIcon;
+export default mobxSvg;

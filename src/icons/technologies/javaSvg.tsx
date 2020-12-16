@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons';
 import React from 'react';
 
 const javaSvg = () => {
@@ -25,6 +24,4 @@ const javaSvg = () => {
     </svg>
 };
 
-const javaIcon = (props: any) => <Icon component={javaSvg} {...props} />;
-
-export default javaIcon;
+export default javaSvg;

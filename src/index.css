@@ -1,26 +1,65 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.ant-card-hoverable{
-  cursor:auto;
+.ant-card-hoverable {
+    cursor: auto;
 }
 
-.ant-back-top{
-  bottom: 15px;
+.ant-back-top {
+    bottom: 15px;
 }
 
-.ant-collapse,.ant-collapse-content{
-  background-color: rgba(0,0,0,0);
-  border-top: 1px solid #d9d9d9;
+.ant-collapse, .ant-collapse-content {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid #d9d9d9;
 }
+
+.ant-tag-gold {
+    background-color: #fffbe636;
+    border-color: #fadb14;
+}
+
+.ant-tag-blue {
+    background: #e6f7ff38;
+    border-color: #1890ff;
+
+}
+
+.ant-tag-magenta {
+    background: #fff0f630;
+    border-color: #eb2f96;
+}
+
+.ant-tag-yellow {
+    background: #feffe642;
+}
+
+.ant-tag-geekblue {
+    background: #f0f5ff29;
+    border-color: #2f54eb;
+}
+
+.ant-tag-purple {
+    background: #f9f0ff26;
+}
+
+.ant-tag-orange {
+    background: #fff7e640;
+}
+
+.ant-tag-volcano {
+    background: #fff2e83d;
+}
+
+
