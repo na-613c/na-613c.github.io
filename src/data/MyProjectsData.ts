@@ -43,8 +43,13 @@ const MyProjectsData = [
         example: [{
             name: 'Заметки',
             description: 'Оповещения о событиях в браузере. Сами данные хранятся в localstorage и берутся с задержкой от 1 до 2 секунд, что бы имитировать работу с api. Во время создания изучил MobX для контроля бизнес уровня. При создании UI использовался Ant Design.',
-            link: 'https://na-613c.github.io/browser-notificator/#/',
+            link: 'https://na-613c.github.io/browser-notificator',
             code: 'https://github.com/na-613c/browser-notificator',
+        },{
+            name: 'Портфолио',
+            description: 'Данное портфолио сделано при помощи Type Script и React . При создании UI использовался Ant Design.',
+            link: 'https://na-613c.github.io',
+            code: 'https://github.com/na-613c/na-613c.github.io',
         }],
     },
     {
