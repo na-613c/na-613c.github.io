@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import ThemeController from './ThemeController';
 import reportWebVitals from './reportWebVitals';
-import 'antd/dist/antd.css';
-import './index.css';
 import MyProjectsData from './data/MyProjectsData';
+import './index.css'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App MyProjectsData={MyProjectsData}/>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <ThemeController MyProjectsData={MyProjectsData}/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 reportWebVitals();

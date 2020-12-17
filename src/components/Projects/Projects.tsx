@@ -8,7 +8,7 @@ const {Title} = Typography;
 
 const Style = {
     background: 'rgba(239, 219, 255,0.2)',
-    'box-shadow': '0 0 15px rgba(0,0,0,0.5)',
+    boxShadow: '0 0 15px rgba(0,0,0,0.5)',
     marginBottom: 10,
     padding: '15px 20px',
 };
