@@ -18,7 +18,8 @@ const Education = () => {
         <div style={{paddingTop: 15}}>
             <Title level={2}> Оброзование </Title>
             <Row justify="end" style={{marginBottom: 15, padding: '14px 20px'}}>
-                <Col span={6} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}}>
+                <Col style={{paddingBottom: 15}} span={6} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}}
+                     xl={{span: 6}}>
                     <Image
                         width={200}
                         src={education}
