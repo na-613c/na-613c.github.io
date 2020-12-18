@@ -12,7 +12,7 @@ const Style = {
     marginBottom: 10,
 };
 
-const MyHeader: FC<any> = ({themes, toggleTheme}) => {
+const MyHeader: FC<any> = ({isLight, toggleTheme}) => {
 
     function onChange(checked: boolean) {
         console.log(checked ? 'rus' : 'eng')
@@ -25,7 +25,7 @@ const MyHeader: FC<any> = ({themes, toggleTheme}) => {
                 <span> Шавловский Иван </span>
                 <Switch checkedChildren={<Icon component={lightSvg}/>}
                         unCheckedChildren={<Icon component={darkSvg}/>}
-                        defaultChecked
+                        defaultChecked={isLight}
                         onChange={toggleTheme}
                 />
                 <Switch checkedChildren='РУС'

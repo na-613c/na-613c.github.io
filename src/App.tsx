@@ -11,7 +11,7 @@ import {BackTop} from "antd";
 import Contacts from "./components/Contacts/Contacts";
 import 'antd/dist/antd.css'
 
-const App: FC<{ MyProjectsData: MyProjectsModel[], state: any, toggleTheme: any }> = ({MyProjectsData, state, toggleTheme}) => {
+const App: FC<{ MyProjectsData: MyProjectsModel[], isLight: boolean, toggleTheme: any }> = ({MyProjectsData, isLight, toggleTheme}) => {
 
     const toggleLang = (isLight: boolean) => {
 
@@ -19,9 +19,9 @@ const App: FC<{ MyProjectsData: MyProjectsModel[], state: any, toggleTheme: any 
 
 
     return (
-        <div className="App" style={{backgroundColor: state.theme.background, color: state.theme.foreground}}>
+        <div className="App" >
             {/*<ThemeContext.Provider value={state.theme}>*/}
-            <MyHeader themes={state.theme} toggleTheme={toggleTheme}/>
+            <MyHeader isLight={isLight} toggleTheme={toggleTheme}/>
             <About/>
             <Contacts/>
             <Skills/>

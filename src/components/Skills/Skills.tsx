@@ -12,10 +12,10 @@ import reduxSvg from "../../icons/technologies/reduxSvg";
 import mobxSvg from '../../icons/technologies/mobxSvg';
 import ajaxSvg from "../../icons/technologies/ajaxSvg";
 
-const style = {
-    color: '#000',
-    borderColor: '#000',
-};
+// const style = {
+//     color: '#000',
+//     borderColor: '#000',
+// };
 
 const Skills = () => {
     return (
@@ -29,7 +29,10 @@ const Skills = () => {
             <Tag icon={<Icon component={scssSvg}/>} color="magenta">
                 SCSS | SASS
             </Tag>
-            <Tag style={style} icon={<Icon component={jsSvg}/>} color="yellow">
+            {/*<Tag style={style} icon={<Icon component={jsSvg}/>} color="yellow">*/}
+            {/*    JavaScript*/}
+            {/*</Tag>*/}
+            <Tag icon={<Icon component={jsSvg}/>} color="yellow">
                 JavaScript
             </Tag>
             <Tag icon={<Icon component={tsSvg}/>} color="geekblue">

@@ -9,11 +9,13 @@ const bsuirImg = 'https://iis.bsuir.by/assets/bsuir_logo2.png';
 
 const style = {
     width: '100%',
+    background: 'rgba(239, 219, 255, 0.2)',
+    boxShadow: 'rgba(0, 0, 0, 0.5) 0px 0px 15px',
 };
 
 const Education = () => {
     return (
-        <div>
+        <div style={{paddingTop: 15}}>
             <Title level={2}> Оброзование </Title>
             <Row justify="end" style={{marginBottom: 15, padding: '14px 20px'}}>
                 <Col span={6} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}}>
