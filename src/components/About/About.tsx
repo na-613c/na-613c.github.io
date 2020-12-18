@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Col, Row, Typography} from 'antd';
 import AnimationContainer from "./Animation/AnimationContainer";
 
@@ -6,7 +6,17 @@ const {Title, Paragraph} = Typography;
 
 
 const About = () => {
-    let width = (500 < window.innerWidth * 0.83) ? 500 : window.innerWidth * 0.83;
+
+    let [width, setWidth] = useState((500 < window.innerWidth * 0.83) ? 500 : window.innerWidth * 0.83);
+
+    useEffect(() => {
+        const handleResize = () => setWidth((500 < window.innerWidth * 0.83) ? 500 : window.innerWidth * 0.83);
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    });
+
     return (
         <div style={{margin: '40px auto'}}>
             <Row justify="center" align="middle">
@@ -35,8 +45,6 @@ const About = () => {
                     </Paragraph>
                 </Col>
             </Row>
-
-
         </div>
     );
 };
