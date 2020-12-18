@@ -1,16 +1,16 @@
 import {Canvas} from "react-three-fiber";
 import * as THREE from "three";
-import React from "react";
+import React, {FC} from "react";
 import Animation from "./Animation";
 
 
-const AnimationContainer = () => {
+const AnimationContainer: FC<({ width: number })> = ({width}) => {
 
     const isBrowser = typeof window !== "undefined";
 
     return isBrowser ? (
         <Canvas
-            style={{width: 500, height: 250}}
+            style={{width: width, height: width/2}}
             camera={{position: [0, 2, 5]}}
             onCreated={({gl}) => {
                 gl.shadowMap.enabled = true;

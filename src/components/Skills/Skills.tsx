@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tag} from "antd";
+import {Space, Tag} from "antd";
 import Icon from '@ant-design/icons';
 import jsSvg from '../../icons/technologies/jsSvg';
 import cssSvg from '../../icons/technologies/cssSvg';
@@ -12,14 +12,10 @@ import reduxSvg from "../../icons/technologies/reduxSvg";
 import mobxSvg from '../../icons/technologies/mobxSvg';
 import ajaxSvg from "../../icons/technologies/ajaxSvg";
 
-// const style = {
-//     color: '#000',
-//     borderColor: '#000',
-// };
 
 const Skills = () => {
     return (
-        <div style={{paddingBottom: 50}}>
+        <Space style={{padding: '0 50px 50px', justifyContent: 'center'}} wrap>
             <Tag icon={<Icon component={htmlSvg}/>} color="gold">
                 HTML
             </Tag>
@@ -29,9 +25,6 @@ const Skills = () => {
             <Tag icon={<Icon component={scssSvg}/>} color="magenta">
                 SCSS | SASS
             </Tag>
-            {/*<Tag style={style} icon={<Icon component={jsSvg}/>} color="yellow">*/}
-            {/*    JavaScript*/}
-            {/*</Tag>*/}
             <Tag icon={<Icon component={jsSvg}/>} color="yellow">
                 JavaScript
             </Tag>
@@ -53,8 +46,7 @@ const Skills = () => {
             <Tag icon={<Icon component={gitSvg}/>} color="volcano">
                 Git
             </Tag>
-        </div>
-
+        </Space>
     );
 };
 

@@ -1,9 +1,11 @@
 import {Header} from 'antd/lib/layout/layout';
 import React, {FC} from 'react';
-import {Space, Switch} from "antd";
+import {Col, Row, Space, Switch, Typography} from "antd";
 import Icon from '@ant-design/icons';
 import darkSvg from "../../icons/dark-light/darkSvg";
 import lightSvg from "../../icons/dark-light/lightSvg";
+
+const {Title} = Typography;
 
 
 const Style = {
@@ -16,24 +18,30 @@ const MyHeader: FC<any> = ({isLight, toggleTheme}) => {
 
     function onChange(checked: boolean) {
         console.log(checked ? 'rus' : 'eng')
-
     }
 
     return (
         <Header style={{...Style}}>
-            <Space>
-                <span> Шавловский Иван </span>
-                <Switch checkedChildren={<Icon component={lightSvg}/>}
-                        unCheckedChildren={<Icon component={darkSvg}/>}
-                        defaultChecked={isLight}
-                        onChange={toggleTheme}
-                />
-                <Switch checkedChildren='РУС'
-                        unCheckedChildren='ENG'
-                        defaultChecked
-                        onChange={onChange}
-                />
-            </Space>
+            <Row justify="space-around" align="middle">
+                <Col>
+                    <Title level={2}> Шавловский Иван </Title>
+                </Col>
+                <Col>
+                    <Space>
+                        <Switch checkedChildren={<Icon component={lightSvg}/>}
+                                unCheckedChildren={<Icon component={darkSvg}/>}
+                                defaultChecked={isLight}
+                                onChange={toggleTheme}
+                        />
+                        <Switch checkedChildren='РУС'
+                                unCheckedChildren='ENG'
+                                defaultChecked
+                                onChange={onChange}
+                        />
+                    </Space>
+                </Col>
+
+            </Row>
         </Header>
     );
 };

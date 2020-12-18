@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tag, Typography} from "antd";
+import {Space, Tag, Typography} from "antd";
 import Icon, {CodepenOutlined, GithubOutlined, LinkedinOutlined, PhoneOutlined, SkypeOutlined} from '@ant-design/icons';
 import telegramSvg from "../../icons/social/telegramSvg";
 import vkSvg from "../../icons/social/vkSvg";
@@ -9,7 +9,7 @@ const {Link} = Typography;
 
 const Contacts = () => {
     return (
-        <div style={{paddingBottom: 50}}>
+        <Space style={{padding: '0 50px 50px', justifyContent: 'center'}} wrap>
             <Link href="tel:+375445599306" target="_blank">
                 <Tag icon={<PhoneOutlined/>} color="#7cb305">
                     +375(44)559-93-06
@@ -30,7 +30,6 @@ const Contacts = () => {
                     Gmail
                 </Tag>
             </Link>
-
             <Link href="tg://resolve?domain=ivan613c" target="_blank">
                 <Tag icon={<Icon component={telegramSvg}/>} color="#5682a3">
                     Telegram
@@ -52,8 +51,7 @@ const Contacts = () => {
                     Codepen
                 </Tag>
             </Link>
-
-        </div>
+        </Space>
 
     );
 };

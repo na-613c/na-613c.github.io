@@ -4,16 +4,17 @@ import AnimationContainer from "./Animation/AnimationContainer";
 
 const {Title, Paragraph} = Typography;
 
-const About = () => {
 
+const About = () => {
+    let width = (500 < window.innerWidth * 0.83) ? 500 : window.innerWidth * 0.83;
     return (
         <div style={{margin: '40px auto'}}>
             <Row justify="center" align="middle">
                 <Col xs={{span: 20}} sm={{span: 14}} md={{span: 11}} lg={{span: 8}} xl={{span: 6}}>
-                    <AnimationContainer/>
+                    <AnimationContainer width={width}/>
                 </Col>
                 <Col xs={{span: 20}} sm={{span: 14}} md={{span: 22}} lg={{span: 16}} xl={{span: 12}}>
-                    <Title>Обо мне</Title>
+                    <Title level={2}>Обо мне</Title>
                     <Paragraph>
                         Желаю развиваться в профессиональной сфере.
                     </Paragraph>
