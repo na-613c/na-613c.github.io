@@ -13,7 +13,7 @@ const style = {
     boxShadow: 'rgba(0, 0, 0, 0.5) 0px 0px 15px',
 };
 
-const Education = () => {
+const Education = React.memo(() => {
     return (
         <div style={{paddingTop: 15}}>
             <Title level={2}> Оброзование </Title>
@@ -41,7 +41,7 @@ const Education = () => {
             </Row>
         </div>
     );
-};
+});
 
 export default Education;
 

@@ -11,7 +11,6 @@ type Props = { example: ExampleProjectModel, id: number };
 const ExampleProject: FC<Props> = ({example, id}) => {
 
     return (
-
         <Collapse style={{textAlign: 'left'}}>
             <Panel header={example.name} key={id}>
                 <Paragraph ellipsis={{rows: 2, expandable: true, symbol: 'more'}}>{example.description}</Paragraph>
@@ -28,7 +27,6 @@ const ExampleProject: FC<Props> = ({example, id}) => {
                 </p>
             </Panel>
         </Collapse>
-
     );
 };
 

@@ -14,7 +14,7 @@ const Style = {
 };
 
 
-const Projects: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsData}) => {
+const Projects: FC<{ MyProjectsData: MyProjectsModel[] }> = React.memo(({MyProjectsData}) => {
 
     const projects = MyProjectsData.map((i, id) => {
         return <MyProjects title={i.title} body={i.example} key={id}/>
@@ -28,7 +28,7 @@ const Projects: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsData}) =
             </Row>
         </div>
     );
-};
+});
 
 export default Projects;
 

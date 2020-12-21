@@ -13,7 +13,7 @@ import mobxSvg from '../../icons/technologies/mobxSvg';
 import ajaxSvg from "../../icons/technologies/ajaxSvg";
 
 
-const Skills = () => {
+const Skills = React.memo(() => {
     return (
         <Space style={{padding: '0 50px 50px', justifyContent: 'center'}} wrap>
             <Tag icon={<Icon component={htmlSvg}/>} color="gold">
@@ -48,7 +48,7 @@ const Skills = () => {
             </Tag>
         </Space>
     );
-};
+});
 
 export default Skills;
 

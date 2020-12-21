@@ -4,7 +4,7 @@ import React, {FC} from "react";
 import Animation from "./Animation";
 
 
-const AnimationContainer: FC<({ width: number })> = ({width}) => {
+const AnimationContainer: FC<({ width: number })> = React.memo(({width}) => {
 
     const isBrowser = typeof window !== "undefined";
 
@@ -22,6 +22,6 @@ const AnimationContainer: FC<({ width: number })> = ({width}) => {
             <Animation/>
         </Canvas>
     ) : null;
-};
+});
 
 export default AnimationContainer;

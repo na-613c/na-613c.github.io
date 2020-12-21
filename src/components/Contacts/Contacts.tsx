@@ -7,7 +7,7 @@ import gmailSvg from '../../icons/social/gmailSvg';
 
 const {Link} = Typography;
 
-const Contacts = () => {
+const Contacts = React.memo(() => {
     return (
         <Space style={{padding: '0 50px 50px', justifyContent: 'center'}} wrap>
             <Link href="tel:+375445599306" target="_blank">
@@ -54,7 +54,7 @@ const Contacts = () => {
         </Space>
 
     );
-};
+});
 
 export default Contacts;
 

@@ -7,11 +7,11 @@ const Style = {
     marginBottom: 10,
 };
 
-const MyFooter = () => {
+const MyFooter = React.memo(() => {
 
     return (
         <Footer style={Style}>© 2020 Shaulouski Ivan</Footer>
     );
-};
+});
 
 export default MyFooter;

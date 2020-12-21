@@ -14,7 +14,7 @@ const Style = {
     marginBottom: 10,
 };
 
-const MyHeader: FC<any> = ({isLight, toggleTheme}) => {
+const MyHeader: FC<any> = React.memo(({isLight, toggleTheme}) => {
 
     function onChange(checked: boolean) {
         console.log(checked ? 'rus' : 'eng')
@@ -44,6 +44,6 @@ const MyHeader: FC<any> = ({isLight, toggleTheme}) => {
             </Row>
         </Header>
     );
-};
+});
 
 export default MyHeader;

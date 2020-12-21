@@ -5,7 +5,7 @@ import AnimationContainer from "./Animation/AnimationContainer";
 const {Title, Paragraph} = Typography;
 
 
-const About = () => {
+const About = React.memo(() => {
 
     let [width, setWidth] = useState((500 < window.innerWidth * 0.83) ? 500 : window.innerWidth * 0.83);
 
@@ -47,7 +47,7 @@ const About = () => {
             </Row>
         </div>
     );
-};
+});
 
 export default About;
 

@@ -5,7 +5,7 @@ import {useFrame} from "react-three-fiber";
 import {a} from "react-spring/three";
 
 
-const Animation = () => {
+const Animation = React.memo(() => {
     let meshRef = useRef();
     const [model, setModel] = useState();
 
@@ -27,7 +27,7 @@ const Animation = () => {
                 <primitive object={model.scene}/> : null}
         </a.mesh>
     )
-};
+});
 
 export default Animation;
 
