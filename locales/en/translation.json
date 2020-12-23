@@ -1,0 +1,17 @@
+{
+  "name": "Shaulouski Ivan",
+  "about": {
+    "title": "About me",
+    "body": "I wish you to develop in the professional field. \nI have non-commercial experience with HTML, CSS, SCSS, Java Script, Type Script, GIT, React js, React-Redux, MobX, Rest API. I've worked with design systems like Ant Design and Bootstrap. I've worked with jQuery and Node.js, including making a site parser and a bot for Discord. Took courses Cisco: Introduction to Cybersecurity, Cybersecurity Essentials, CCNA R&S: Introduction to Networks.\n There is a military ID. \nI do not have any bad habits."
+  },
+  "projects": {
+    "title": "My projects"
+  },
+  "education": {
+    "title": "Education",
+    "body": "The Belarusian State University of Informatics and Radioelectronics"
+  },
+  "more": "more",
+  "project": "Example",
+  "code": "Project code"
+}
