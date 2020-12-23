@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import './App.css';
 import MyHeader from "./components/MyHeader/Header";
 import MyFooter from "./components/MyFooter/MyFooter";
@@ -10,26 +10,37 @@ import Skills from "./components/Skills/Skills";
 import {BackTop} from "antd";
 import Contacts from "./components/Contacts/Contacts";
 import 'antd/dist/antd.css'
+import {useTranslation} from "react-i18next";
 
-const App: FC<{ MyProjectsData: MyProjectsModel[], isLight: boolean, toggleTheme: any }> = ({MyProjectsData, isLight, toggleTheme}) => {
+type props = {
+    MyProjectsData: {
+        'ru': MyProjectsModel[],
+        'en': MyProjectsModel[]
+    },
+    isLight: boolean,
+    toggleTheme: any
+}
 
-    const toggleLang = (isLight: boolean) => {
+const App: FC<props> = ({MyProjectsData, isLight, toggleTheme}) => {
 
-    };
+    let [data, setData] = useState(MyProjectsData.ru);
+    const {i18n} = useTranslation();
 
+    function onChange(checked: boolean) {
+        checked ? i18n.changeLanguage('ru') : i18n.changeLanguage('en');
+        setData(checked ? MyProjectsData.ru : MyProjectsData.en);
+    }
 
     return (
-        <div className="App" >
-            {/*<ThemeContext.Provider value={state.theme}>*/}
-            <MyHeader isLight={isLight} toggleTheme={toggleTheme}/>
+        <div className="App">
+            <MyHeader isLight={isLight} toggleTheme={toggleTheme} onChange={onChange}/>
             <About/>
             <Contacts/>
             <Skills/>
-            <Projects MyProjectsData={MyProjectsData}/>
+            <Projects myProjectsData={data}/>
             <Education/>
             <MyFooter/>
             <BackTop/>
-            {/*</ThemeContext.Provider>*/}
         </div>
 
     );

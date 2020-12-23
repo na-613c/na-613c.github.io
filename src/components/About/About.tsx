@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Col, Row, Typography} from 'antd';
 import AnimationContainer from "./Animation/AnimationContainer";
+import {useTranslation} from "react-i18next";
 
 const {Title, Paragraph} = Typography;
 
@@ -17,6 +18,9 @@ const About = React.memo(() => {
         };
     });
 
+    const {t} = useTranslation();
+    const aboutMe = t("about.body").split("\n").map((i, id) => <Paragraph key={id}>{i}</Paragraph>);
+
     return (
         <div style={{margin: '40px auto'}}>
             <Row justify="center" align="middle">
@@ -24,25 +28,8 @@ const About = React.memo(() => {
                     <AnimationContainer width={width}/>
                 </Col>
                 <Col xs={{span: 20}} sm={{span: 14}} md={{span: 22}} lg={{span: 16}} xl={{span: 12}}>
-                    <Title level={2}>Обо мне</Title>
-                    <Paragraph>
-                        Желаю развиваться в профессиональной сфере.
-                    </Paragraph>
-                    <Paragraph>
-                        Имею не коммерческий опыт работы с HTML, CSS, SCSS, Java Script, Type Script, GIT, React js,
-                        React-Redux, MobX, Rest API. Работал с такими дизайн-системами как Ant Design и Bootstrap. Так
-                        же
-                        взаимодействовал с jQuery и Node.js, в том числе делал парсер сайта и бота для Discord.
-                        Проходил курсы Cisco: Introduction to Cybersecurity, Cybersecurity Essentials, CCNA R&S:
-                        Introduction to
-                        Networks.
-                    </Paragraph>
-                    <Paragraph>
-                        Имеется военный билет.
-                    </Paragraph>
-                    <Paragraph>
-                        Не имею вредных привычек.
-                    </Paragraph>
+                    <Title level={2}>{t("about.title")}</Title>
+                    {aboutMe}
                 </Col>
             </Row>
         </div>

@@ -1,5 +1,6 @@
 import {Footer} from 'antd/lib/layout/layout';
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 const Style = {
     background: 'rgba(239, 219, 255,0.2)',
@@ -8,9 +9,9 @@ const Style = {
 };
 
 const MyFooter = React.memo(() => {
-
+    const {t} = useTranslation();
     return (
-        <Footer style={Style}>© 2020 Shaulouski Ivan</Footer>
+        <Footer style={Style}>© 2020 {t("name")}</Footer>
     );
 });
 

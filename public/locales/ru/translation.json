@@ -1,0 +1,17 @@
+{
+  "name": " Шавловский Иван",
+  "about": {
+    "title": "Обо мне",
+    "body": "Желаю развиваться в профессиональной сфере. \nИмею не коммерческий опыт работы с HTML, CSS, SCSS, Java Script, Type Script, GIT, React js, React-Redux, MobX, Rest API. Работал с такими дизайн-системами как Ant Design и Bootstrap. Так же взаимодействовал с jQuery и Node.js, в том числе делал парсер сайта и бота для Discord. Проходил курсы Cisco: Introduction to Cybersecurity, Cybersecurity Essentials, CCNA R&S: Introduction to Networks.\n Имеется военный билет. \n Не имею вредных привычек."
+  },
+  "projects": {
+    "title": "Мои проекты"
+  },
+  "education": {
+    "title": "Оброзование",
+    "body": "Белорусский Государственный Университет Информатики и Радиоэлектроники"
+  },
+  "more": "подробнее",
+  "project": "Рабочий пример",
+  "code": "Код проекта"
+}

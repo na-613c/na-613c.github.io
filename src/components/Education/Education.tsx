@@ -2,6 +2,7 @@ import React from 'react';
 import {Avatar, Card, Col, Image, Row, Space, Typography} from 'antd';
 import {CalendarOutlined} from '@ant-design/icons';
 import education from '../../images/education.png';
+import {useTranslation} from "react-i18next";
 
 const {Text, Link, Title} = Typography;
 const bsuirImg = 'https://iis.bsuir.by/assets/bsuir_logo2.png';
@@ -14,9 +15,10 @@ const style = {
 };
 
 const Education = React.memo(() => {
+    const {t} = useTranslation();
     return (
         <div style={{paddingTop: 15}}>
-            <Title level={2}> Оброзование </Title>
+            <Title level={2}> {t("education.title")} </Title>
             <Row justify="end" style={{marginBottom: 15, padding: '14px 20px'}}>
                 <Col style={{paddingBottom: 15}} span={6} xs={{span: 20}} sm={{span: 16}} md={{span: 12}} lg={{span: 8}}
                      xl={{span: 6}}>
@@ -31,7 +33,7 @@ const Education = React.memo(() => {
                             <Avatar shape="square" style={{backgroundColor: '#3A547F'}} src={bsuirImg}/>
                             <Text strong>
                                 <Link href="https://www.bsuir.by/" target="_blank">
-                                    Белорусский Государственный Университет Информатики и Радиоэлектроники
+                                    {t("education.body")}
                                 </Link>
                             </Text>
                         </Space>

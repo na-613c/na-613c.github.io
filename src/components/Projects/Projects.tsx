@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {Row, Typography} from 'antd';
 import MyProjects from './MyProjects/MyProjects';
 import MyProjectsModel from '../../models/MyProjectsModel';
+import {useTranslation} from "react-i18next";
 
 const {Title} = Typography;
 
@@ -13,16 +14,16 @@ const Style = {
     padding: '15px 20px',
 };
 
+const Projects: FC<{ myProjectsData: MyProjectsModel[] }> = React.memo(({myProjectsData}) => {
+    const {t} = useTranslation();
 
-const Projects: FC<{ MyProjectsData: MyProjectsModel[] }> = React.memo(({MyProjectsData}) => {
-
-    const projects = MyProjectsData.map((i, id) => {
+    const projects = myProjectsData.map((i, id) => {
         return <MyProjects title={i.title} body={i.example} key={id}/>
     });
 
     return (
         <div style={Style}>
-            <Title level={2}> Мои проекты </Title>
+            <Title level={2}> {t("projects.title")} </Title>
             <Row gutter={[16, 24]} justify="space-around">
                 {projects}
             </Row>

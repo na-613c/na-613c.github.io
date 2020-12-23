@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, Suspense, useEffect, useState} from 'react';
 import App from "./App";
 import MyProjectsModel from "./models/MyProjectsModel";
 import darkVars from './theme/dark.json';
@@ -10,7 +10,14 @@ declare global {
     }
 }
 
-const ThemeController: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsData}) => {
+type props = {
+    MyProjectsData: {
+        'ru': MyProjectsModel[],
+        'en': MyProjectsModel[]
+    }
+}
+
+const ThemeController: FC<props> = ({MyProjectsData}) => {
 
     let [theme, setTheme] = useState(localStorage.getItem('TYPE_OF_THEME') || 'light');
 
@@ -27,9 +34,11 @@ const ThemeController: FC<{ MyProjectsData: MyProjectsModel[] }> = ({MyProjectsD
     };
 
     return (
-        <App MyProjectsData={MyProjectsData}
-             isLight={theme === 'light'}
-             toggleTheme={toggleTheme}/>
+        <Suspense fallback={<div>Loading...</div>}>
+            <App MyProjectsData={MyProjectsData}
+                 isLight={theme === 'light'}
+                 toggleTheme={toggleTheme}/>
+        </Suspense>
     );
 };
 

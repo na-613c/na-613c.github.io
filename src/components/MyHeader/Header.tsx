@@ -4,6 +4,7 @@ import {Col, Row, Space, Switch, Typography} from "antd";
 import Icon from '@ant-design/icons';
 import darkSvg from "../../icons/dark-light/darkSvg";
 import lightSvg from "../../icons/dark-light/lightSvg";
+import {useTranslation} from "react-i18next";
 
 const {Title} = Typography;
 
@@ -14,17 +15,13 @@ const Style = {
     marginBottom: 10,
 };
 
-const MyHeader: FC<any> = React.memo(({isLight, toggleTheme}) => {
-
-    function onChange(checked: boolean) {
-        console.log(checked ? 'rus' : 'eng')
-    }
-
+const MyHeader: FC<any> = React.memo(({isLight, toggleTheme, onChange}) => {
+    const {t} = useTranslation();
     return (
         <Header style={{...Style}}>
             <Row justify="space-around" align="middle">
                 <Col>
-                    <Title level={2}> Шавловский Иван </Title>
+                    <Title level={2}>{t("name")}</Title>
                 </Col>
                 <Col>
                     <Space>
