@@ -1,8 +1,10 @@
-import React, {FC, Suspense, useEffect, useState} from 'react';
-import App from "./App";
+import React, {FC, lazy, Suspense, useEffect, useState} from 'react';
 import MyProjectsModel from "./models/MyProjectsModel";
 import darkVars from './theme/dark.json';
 import lightVars from './theme/light.json';
+import Preloader from "./components/Preloader/Preloader";
+
+const App = lazy(() => import("./App"));
 
 declare global {
     interface Window {
@@ -24,7 +26,8 @@ const ThemeController: FC<props> = ({MyProjectsData}) => {
     useEffect(() => {
         const less = window.less;
         (theme === 'light') ? less.modifyVars(lightVars) : less.modifyVars(darkVars)
-    }, [theme]);
+    });
+
 
     const toggleTheme = (isLight: boolean) => {
         isLight ?
@@ -34,7 +37,7 @@ const ThemeController: FC<props> = ({MyProjectsData}) => {
     };
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Preloader/>}>
             <App MyProjectsData={MyProjectsData}
                  isLight={theme === 'light'}
                  toggleTheme={toggleTheme}/>

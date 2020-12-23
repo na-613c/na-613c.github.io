@@ -13,7 +13,7 @@ i18n
     .use(initReactI18next)
     .init({
             // Используемый стандартный язык
-        fallbackLng: 'ru',
+        fallbackLng: localStorage.getItem('LANGUAGE') || 'ru',
         debug: true,
         // Обнаруживает и кэширует cookie с предоставленного языка
         detection: {

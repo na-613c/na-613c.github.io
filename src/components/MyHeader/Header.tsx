@@ -15,7 +15,7 @@ const Style = {
     marginBottom: 10,
 };
 
-const MyHeader: FC<any> = React.memo(({isLight, toggleTheme, onChange}) => {
+const MyHeader: FC<any> = React.memo(({isLight, toggleTheme, toggleLang, isRu}) => {
     const {t} = useTranslation();
     return (
         <Header style={{...Style}}>
@@ -32,8 +32,8 @@ const MyHeader: FC<any> = React.memo(({isLight, toggleTheme, onChange}) => {
                         />
                         <Switch checkedChildren='РУС'
                                 unCheckedChildren='ENG'
-                                defaultChecked
-                                onChange={onChange}
+                                defaultChecked={isRu}
+                                onChange={toggleLang}
                         />
                     </Space>
                 </Col>

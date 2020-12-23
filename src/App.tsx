@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import './App.css';
 import MyHeader from "./components/MyHeader/Header";
 import MyFooter from "./components/MyFooter/MyFooter";
@@ -22,18 +22,28 @@ type props = {
 }
 
 const App: FC<props> = ({MyProjectsData, isLight, toggleTheme}) => {
-
-    let [data, setData] = useState(MyProjectsData.ru);
     const {i18n} = useTranslation();
 
-    function onChange(checked: boolean) {
-        checked ? i18n.changeLanguage('ru') : i18n.changeLanguage('en');
-        setData(checked ? MyProjectsData.ru : MyProjectsData.en);
-    }
+    let [lang, setLang] = useState(localStorage.getItem('LANGUAGE') || 'ru');
+    let [data, setData] = useState(MyProjectsData['ru']);
+
+    const toggleLang = (isRu: boolean) => {
+        isRu ? setLang('ru') : setLang('en')
+    };
+
+    useEffect(() => {
+        i18n.changeLanguage(lang);
+        // @ts-ignore
+        setData(MyProjectsData[lang]);
+        localStorage.setItem('LANGUAGE', lang);
+    }, [lang]);
 
     return (
         <div className="App">
-            <MyHeader isLight={isLight} toggleTheme={toggleTheme} onChange={onChange}/>
+            <MyHeader isLight={isLight}
+                      toggleTheme={toggleTheme} 
+                      toggleLang={toggleLang}
+                      isRu={lang === 'ru'}/>
             <About/>
             <Contacts/>
             <Skills/>
