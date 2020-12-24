@@ -41,7 +41,7 @@ const App: FC<props> = ({MyProjectsData, isLight, toggleTheme}) => {
     return (
         <div className="App">
             <MyHeader isLight={isLight}
-                      toggleTheme={toggleTheme} 
+                      toggleTheme={toggleTheme}
                       toggleLang={toggleLang}
                       isRu={lang === 'ru'}/>
             <About/>
