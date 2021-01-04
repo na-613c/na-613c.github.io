@@ -48,7 +48,7 @@ const MyProjectsData = {
                 code: 'https://github.com/na-613c/browser-notificator',
             }, {
                 name: 'Портфолио',
-                description: 'Данное портфолио сделано при помощи Type Script и React . При создании UI использовался Ant Design.',
+                description: 'Данное портфолио сделано при помощи Type Script и React . При создании UI использовался Ant Design. Для использования 3D анимации использовал React-Three-Fiber. Изучил работу с i18next для смены языка. Для смены темы приложения используется Less и localstorage.',
                 link: 'https://na-613c.github.io',
                 code: 'https://github.com/na-613c/na-613c.github.io',
             }],
@@ -177,7 +177,7 @@ const MyProjectsData = {
                 code: 'https://github.com/na-613c/browser-notificator',
             }, {
                 name: 'Portfolio',
-                description: 'This portfolio is made using Type Script and React. The UI was created using Ant Design.',
+                description: 'This portfolio is made using Type Script and React. The UI was created using Ant Design. I used React-Three-Fiber to use 3D animation. Studied working with i18next to change the language. Less and localstorage are used to change the theme of the application.',
                 link: 'https://na-613c.github.io',
                 code: 'https://github.com/na-613c/na-613c.github.io',
             }],
