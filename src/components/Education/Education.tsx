@@ -12,6 +12,7 @@ const style = {
     width: '100%',
     background: 'rgba(239, 219, 255, 0.2)',
     boxShadow: 'rgba(0, 0, 0, 0.5) 0px 0px 15px',
+    borderRadius: 10
 };
 
 const Education = React.memo(() => {

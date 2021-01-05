@@ -1,5 +1,3 @@
-import React from 'react';
-
 const scssSvg = () => {
     return <svg width="1em" height="1em" fill="currentColor"
                 viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">

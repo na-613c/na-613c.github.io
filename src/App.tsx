@@ -1,5 +1,4 @@
 import React, {FC, useEffect, useState} from 'react';
-import './App.css';
 import MyHeader from "./components/MyHeader/Header";
 import MyFooter from "./components/MyFooter/MyFooter";
 import MyProjectsModel from './models/MyProjectsModel';
@@ -11,6 +10,7 @@ import {BackTop} from "antd";
 import Contacts from "./components/Contacts/Contacts";
 import 'antd/dist/antd.css'
 import {useTranslation} from "react-i18next";
+import './App.css';
 
 type props = {
     MyProjectsData: {

@@ -22,12 +22,12 @@ const About = React.memo(() => {
     const aboutMe = t("about.body").split("\n").map((i, id) => <Paragraph key={id}>{i}</Paragraph>);
 
     return (
-        <div style={{margin: '40px auto'}}>
+        <div style={{margin: '0 auto', paddingTop: 103, boxSizing: 'border-box'}}>
             <Row justify="center" align="middle">
                 <Col xs={{span: 20}} sm={{span: 14}} md={{span: 11}} lg={{span: 8}} xl={{span: 6}}>
                     <AnimationContainer width={width}/>
                 </Col>
-                <Col xs={{span: 20}} sm={{span: 14}} md={{span: 22}} lg={{span: 16}} xl={{span: 12}}>
+                <Col xs={{span: 20}} sm={{span: 14}} md={{span: 20}} lg={{span: 15}} xl={{span: 12}}>
                     <Title level={2}>{t("about.title")}</Title>
                     {aboutMe}
                 </Col>

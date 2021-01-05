@@ -3,3 +3,8 @@
 }
 
 
+@media (max-width: 480px) {
+  h2.ant-typography, .ant-typography h2 {
+    font-size: 1.5em;
+  }
+}

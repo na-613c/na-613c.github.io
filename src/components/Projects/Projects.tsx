@@ -12,6 +12,7 @@ const Style = {
     boxShadow: '0 0 15px rgba(0,0,0,0.5)',
     marginBottom: 10,
     padding: '15px 20px',
+    borderRadius: 10,
 };
 
 const Projects: FC<{ myProjectsData: MyProjectsModel[] }> = React.memo(({myProjectsData}) => {
