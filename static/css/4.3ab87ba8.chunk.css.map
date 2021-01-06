@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,iBACF,CAGA,yBACE,qCACE,eACF,CACF","file":"4.3ab87ba8.chunk.css","sourcesContent":[".App {\n  text-align: center;\n}\n\n\n@media (max-width: 480px) {\n  h2.ant-typography, .ant-typography h2 {\n    font-size: 1.5em;\n  }\n}"]}
