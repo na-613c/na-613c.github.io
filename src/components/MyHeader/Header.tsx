@@ -26,17 +26,11 @@ const MyHeader: FC<any> = React.memo(({isLight, toggleTheme, toggleLang, isRu}) 
             width: '100%',
             zIndex: 999,
         }}>
-            <div style={{
-                backdropFilter: 'blur(10px)',
-                position: 'fixed',
-                width: '100%',
-                height: 64,
-                borderRadius: '0 0 10px 10px',
-            }}/>
+            <div/>
             <Header style={{...Style}}>
                 <Row justify="space-between" align="middle">
                     <Col xs={{span: 15}} sm={{span: 15}}>
-                        <Title level={2} style={{lineHeight: '48px'}}>{t("name")}</Title>
+                        <Title level={2} style={{lineHeight: '48px', textShadow: '0 0 1px black'}}>{t("name")}</Title>
                     </Col>
                     <Col xs={{span: 9}} sm={{span: 4}}>
                         <Row justify="space-around">

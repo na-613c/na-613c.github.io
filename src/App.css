@@ -1,10 +1,27 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
+.my-header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.my-header::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 64px;
+    border-radius: 0 0 10px 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-filter: blur(10px);
+}
 
 @media (max-width: 480px) {
-  h2.ant-typography, .ant-typography h2 {
-    font-size: 1.5em;
-  }
+    h2.ant-typography, .ant-typography h2 {
+        font-size: 1.5em;
+    }
 }
