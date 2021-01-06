@@ -12,7 +12,7 @@ const Style = {
 const MyFooter = React.memo(() => {
     const {t} = useTranslation();
     return (
-        <Footer style={Style}>© 2020 {t("name")}</Footer>
+        <Footer style={Style}>© 2021 {t("name")}</Footer>
     );
 });
 
