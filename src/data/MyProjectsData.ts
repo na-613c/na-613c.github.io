@@ -115,7 +115,7 @@ const MyProjectsData = {
                 link: 'https://codepen.io/na-613c/full/ExyJBON',
                 code: 'https://codepen.io/na-613c/pen/ExyJBON',
             }, {
-                name: 'Кальулятор',
+                name: 'Калькулятор',
                 description: 'Калькулятор на нативном js с выбором режима работы [Обычный | Инженерный | Программист] и без использования eval().',
                 link: 'https://codepen.io/na-613c/full/WmxVVo',
                 code: 'https://codepen.io/na-613c/pen/WmxVVo',
