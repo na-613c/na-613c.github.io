@@ -8,6 +8,11 @@ const MyProjectsData = {
                 link: 'https://na-613c.github.io/nasa-apod',
                 code: 'https://github.com/na-613c/nasa-apod',
             }, {
+                name: 'Генератор сайтов',
+                description: 'Сайт сделан при помощи React + MobX. Данные хранятся в Firebase. На сайте есть регистрация, мобильная адаптивность, анимации при удалении, валидация форм. В проекте есть предупреждение о потере данных при смене пути и тесты.',
+                link: 'https://na-613c.github.io/web-gen/#/',
+                code: 'https://github.com/na-613c/web-gen',
+            }, {
                 name: 'Соц сеть',
                 description: 'Социальная сеть на основе https://social-network.samuraijs.com/',
                 link: 'https://na-613c.github.io/vk-parody',
@@ -68,20 +73,20 @@ const MyProjectsData = {
                 description: 'Android клиент для интернет портала Wikipedia. При создании использовалось одно Activity и все экраны - Fragments. Для запроса в сеть использовалась библиотека Retrofit2. Личные данные хранятся локально в SQLite. Общедоступные данные - в Firebase. Для создания UI использовался Material Design.',
                 code: 'https://github.com/na-613c/Wikipedia',
             },
-                {
-                    name: 'Калькулятор калорий',
-                    description: 'Калькулятор калорий который позволяет посчиать количество Ккал и ЖБУ в пище. При создании использовалось одно Activity и все экраны - Fragments. Пользователь имеет возможность добавлять новые блюда в удалённую базу данных Firebase.',
-                    code: 'https://github.com/na-613c/CalorieCalculator',
-                }, {
-                    name: 'Викторина',
-                    description: 'Викторина о животных с тремя уровнями сложности из 10 вопросов. Все рекорды хранятся в Firebase. Для запроса в сеть используется Retrofit2 и RxJava.',
-                    code: 'https://github.com/na-613c/Quiz',
-                },
-                {
-                    name: 'Калькулятор',
-                    description: 'Просто калькулятор. Все вычисления и обработка ошибок выполняются при помощи EvalEx.',
-                    code: 'https://github.com/na-613c/Calculator',
-                },
+            {
+                name: 'Калькулятор калорий',
+                description: 'Калькулятор калорий который позволяет посчиать количество Ккал и ЖБУ в пище. При создании использовалось одно Activity и все экраны - Fragments. Пользователь имеет возможность добавлять новые блюда в удалённую базу данных Firebase.',
+                code: 'https://github.com/na-613c/CalorieCalculator',
+            }, {
+                name: 'Викторина',
+                description: 'Викторина о животных с тремя уровнями сложности из 10 вопросов. Все рекорды хранятся в Firebase. Для запроса в сеть используется Retrofit2 и RxJava.',
+                code: 'https://github.com/na-613c/Quiz',
+            },
+            {
+                name: 'Калькулятор',
+                description: 'Просто калькулятор. Все вычисления и обработка ошибок выполняются при помощи EvalEx.',
+                code: 'https://github.com/na-613c/Calculator',
+            },
             ],
         },
         {
@@ -140,6 +145,11 @@ const MyProjectsData = {
                 link: 'https://na-613c.github.io/nasa-apod',
                 code: 'https://github.com/na-613c/nasa-apod',
             }, {
+                name: 'Site Generator',
+                description: 'Website made with React + MobX. The data is stored in Firebase. The site has registration, mobile responsiveness, animations when deleting, form validation. The project has a warning about data loss when changing the path and tests',
+                link: 'https://na-613c.github.io/web-gen/#/',
+                code: 'https://github.com/na-613c/web-gen',
+            }, {
                 name: 'Social network',
                 description: 'Social network based on https://social-network.samuraijs.com/',
                 link: 'https://na-613c.github.io/vk-parody',
@@ -197,20 +207,20 @@ const MyProjectsData = {
                 description: 'Android client for Wikipedia. When creating, one Activity was used and all screens were Fragments. The Retrofit2 library was used to query the network. Personal data is stored locally in SQLite. Public data is in Firebase. Material Design was used to create the UI.',
                 code: 'https://github.com/na-613c/Wikipedia',
             },
-                {
-                    name: 'Calorie calculator',
-                    description: 'Calorie calculator that allows you to calculate the amount of kcal and  fat, protein, carbohydrates in food. When creating, one Activity was used and all screens were Fragments. The user has the ability to add new dishes to the remote Firebase database.',
-                    code: 'https://github.com/na-613c/CalorieCalculator',
-                }, {
-                    name: 'Quiz',
-                    description: 'An animal quiz with three difficulty levels and 10 questions. All records are stored in Firebase. Retrofit2 and RxJava are used to query the network.',
-                    code: 'https://github.com/na-613c/Quiz',
-                },
-                {
-                    name: 'Calculator',
-                    description: 'Easy Calculator on android. All calculations and error handling are done using EvalEx.',
-                    code: 'https://github.com/na-613c/Calculator',
-                },
+            {
+                name: 'Calorie calculator',
+                description: 'Calorie calculator that allows you to calculate the amount of kcal and  fat, protein, carbohydrates in food. When creating, one Activity was used and all screens were Fragments. The user has the ability to add new dishes to the remote Firebase database.',
+                code: 'https://github.com/na-613c/CalorieCalculator',
+            }, {
+                name: 'Quiz',
+                description: 'An animal quiz with three difficulty levels and 10 questions. All records are stored in Firebase. Retrofit2 and RxJava are used to query the network.',
+                code: 'https://github.com/na-613c/Quiz',
+            },
+            {
+                name: 'Calculator',
+                description: 'Easy Calculator on android. All calculations and error handling are done using EvalEx.',
+                code: 'https://github.com/na-613c/Calculator',
+            },
             ],
         },
         {
